@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/external_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rounded"
+        android:backgroundTint="@color/orangeHeader"
+        app:cardCornerRadius="15dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="10dp"
+            android:background="@drawable/rounded"
+            android:backgroundTint="@color/white"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <TextView
+                    android:id="@+id/text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Login"
+                    android:textSize="30sp"
+                    android:textColor="@color/orangeHeader"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="15dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <Space
+                    android:id="@+id/half_space2"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_view"/>
+
+
+                    <TextView
+                        android:id="@+id/login_warning"
+                        android:layout_width="310dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:visibility="visible"
+                        android:text="To enter in the community you must first login with your account"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginHorizontal="10dp"
+                        app:layout_constraintTop_toBottomOf="@+id/half_space2"/>
+
+
+                <Space
+                    android:id="@+id/half_space1"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/login_warning"/>
+
+                <LinearLayout
+                    android:id="@+id/linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@id/half_space1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <EditText
+                        android:id="@+id/email_textview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:hint="insert e-mail..."/>
+
+
+                    <EditText
+                        android:id="@+id/password_textview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:hint="insert password..."/>
+
+                    <CheckBox
+                        android:id="@+id/remember_me_check_box"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:textSize="18sp"
+                        android:buttonTint="@color/gray"
+                        android:textColor="@color/gray"
+                        android:text="remember me"/>
+
+                </LinearLayout>
+
+                <Space
+                    android:id="@+id/space2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linear"/>
+
+                <android.widget.Button
+                    android:id="@+id/forgot_password_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="forgot password?"
+                    android:textSize="15sp"
+                    android:textColor="@color/gray"
+                    android:background="@drawable/rounded"
+                    android:backgroundTint="@color/biancotrasparente"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/space2" />
+
+                <Space
+                    android:id="@+id/space22"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/forgot_password_button"/>
+
+                <android.widget.Button
+                    android:id="@+id/register_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="sign up"
+                    android:textSize="20sp"
+                    android:textColor="@color/gray"
+                    android:background="@drawable/rounded"
+                    android:backgroundTint="@color/biancotrasparente"
+                    app:layout_constraintEnd_toStartOf="@+id/buttons_space"
+                    app:layout_constraintTop_toBottomOf="@+id/space22" />
+
+                <Space
+                    android:id="@+id/buttons_space"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/space22"/>
+
+                <android.widget.Button
+                    android:id="@+id/insert_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="insert"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded"
+                    android:backgroundTint="@color/orangeHeader"
+                    app:layout_constraintStart_toEndOf="@+id/buttons_space"
+                    app:layout_constraintTop_toBottomOf="@+id/space22" />
+
+                <Space
+                    android:id="@+id/space4"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/buttons_space"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

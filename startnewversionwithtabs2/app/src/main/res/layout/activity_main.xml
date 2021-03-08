@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/header_style_doc">
+
+        <ImageButton
+            android:id="@+id/user_icon_button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/user_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/logo_button"
+            android:layout_width="162dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageButton
+            android:id="@+id/help_button"
+            android:layout_width="35dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/question_mark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/main_background">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <ImageButton
+            android:id="@+id/start_training_button"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@drawable/start_training_button" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <ImageButton
+            android:id="@+id/gallery_button"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@drawable/gallery_button" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <ImageButton
+            android:id="@+id/community_button"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@drawable/community_button" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <ImageButton
+            android:id="@+id/settings_button"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@drawable/settings_button" />
+
+    </LinearLayout>
+
+</LinearLayout>

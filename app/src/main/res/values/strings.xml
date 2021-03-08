@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">startnewversionwithtabs</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="charachter_design_tutorial_part1">\nCharacter design can be a tricky beast to tackle. Creating your own character from scratch involves a lot of creative thinking. \nAlthough many of the classic characters familiar to us all through cartoons, movies and advertising look straightforward, a lot of skill and effort will have gone into making them so effective.\n</string>
+    <string name="charachter_design_tutorial_part2">\nBut aside from clean lines and easily readable features, what else do you need to consider for your character design? There\'s knowing what to exaggerate and what to play down, what to add to give a hint of background and depth, and what to do to develop personality. And then there\'s the matter of the technicalities of how to draw your character design. If it\'s going to be used in motion or as part of a comic strip, you\'ll need to make sure it works from any angle.\n</string>
+    <string name="charachter_design_tutorial_part3">\nMany character designers will start their project with a sketch. And most agree designers agree this is often where the essence of the character is captured. So when you\'re working up your design, make sure you don\'t lose that magic.\n</string>
+    <string name="charachter_design_tutorial_part4">\nFor guidance, it can be helpful to try and deconstruct why certain character designs work and why some don\'t. There\'s no shortage of research material to be found, with illustrated characters appearing everywhere: on TV commercials, cereal boxes, shop signs, stickers on fruit, animations on mobile phones, and more. Study these character designs and think about what makes some successful and what in particular you like about them.\n</string>
+    <string name="charachter_design_tutorial_part5">\nIt\'s also a good idea to look beyond character designs when hunting for inspiration. "I like birds\' mating rituals a lot," laughs Rowan. The odd movements can spark unique character behaviour.\n</string>
+    <string name="charachter_design_tutorial_part6">\nWhether you\'re creating a monkey, robot or monster, you can guarantee there are going to be a hundred other similar creations out there. Your character design needs to be strong and interesting in a visual sense to get people\'s attention. A good design is which one where a person could recognize your character from it\'s only silhouette.\n</string>
+
+    <string name="guide_part1">This app will help you improve your artistic skills with the best and simple tutorial you can find on the web, with videos, objectives and a community that will help you 24/7.\n\n
+                                You can use the drawings in the tutorials, or "paths", as references to make your own sketch, create a folder with your works to see how have you improved and share them in the community, to receive hints and advices to improve even more and
+                                once you have accumulated some experience you can help other users in the same way.</string>
+    <string name="guide_paths">The paths are the folders were you can found the tutorials, videos, examples and sometimes other sub-paths; you can save the paths you\'re interested in with the star button in the up right corner at any moment; you can found your saved paths in the "my paths" tab.\n\n
+                                After you have completed a path there is a reference image which is the test to show what you have learned from the current path: try re-draw that image with what you\'ve learned and then take a photo of your work. That pic will be saved in a folder in the gallery where you can compare it with the reference image; you can make more drawings of the reference and add them in this folder, so you can see your improvment easily.\nOnce you have uploaded a photo the path will be considered completed.</string>
+    <string name="guide_gallery">In the gallery you can see the folders and the photos of your drawings (this is a private collection, nobody else can see them) and you can add and delete them at any time. When you add a pic you have to specify which categories it is from: this will help organize them and, in case you share it in the community, will help other users to find and rate it.</string>
+    <string name="guide_gallery_part2">In the "favorites" tab there are all the pic you have saved, of your drawings and by other users (if that user remove its pic from the community, it will be removed also from your collection).</string>
+    <string name="guide_community">In the community you can see the photos shared by everyone, comment and rate them; in the "my photos" tab you can see the photos that you have shared.\n
+                                    When you select a picture you can see the artist, the photo\'s name, its description, its average valutation and the comments of other users.\n
+                                    In the description you can usually found the advices requested by the artist: if you want to help him, you can write a comment; you can also give him a valutation with the rating bar under the pic, but you can do it only if your level in the category which the drawing belong is at least 10.\n\n
+                                    Clicking on the artist\'s name you can visit his profile where you can see his stats and, in the "drawings" tab, his works (but only which one that has been shared in the community).</string>
+    <string name="guide_sketch">\tadd guide here…</string>
+    <string name="guide_rewards">Completing some actions you\'re rewarded with some exp points, that will increase your level: comlpeting a path, taking or sharing a photo of a certain category will increase your level in that category and even the number of comments and the valutations of your drawings will give you experience.\n
+                                There are also some medals you can gain in certain ways, will you collect them all?</string>
+
+
+    <string-array name="categorySpinner">
+        <item>Character design</item>
+        <item>Landscapes</item>
+        <item>Comics</item>
+        <item>Logos</item>
+        <item>Undefined</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GalleryActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/header_style_doc"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/arrow"
+            app:layout_constraintBottom_toTopOf="@+id/activity_name"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/activity_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="  Guide"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageButton
+            android:id="@+id/logo_button"
+            android:layout_width="174dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/main_background"
+        app:layout_constraintBottom_toBottomOf="@+id/bottom_navigation_bar"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp"
+        android:orientation="vertical">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+                <!--Prima pagina della guida-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/guide_prologue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/translucentWhite"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"/>
+
+                        <TextView
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="22sp"
+                            android:fontFamily="casual"
+                            android:gravity="center"
+                            android:text="Welcome to stART!"
+                            android:textFontWeight="600"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="@string/guide_part1"
+                            android:textColor="@color/black"/>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                android:visibility="invisible">
+
+                                <ImageButton
+                                    android:id="@+id/prev_guide_page"
+                                    android:layout_width="70dp"
+                                    android:layout_height="60dp"
+                                    android:backgroundTint="@color/orangeHeader"
+                                    android:background="@drawable/ic_baseline_reply_24"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/orangeHeader"
+                                    android:textSize="18sp"
+                                    android:text="back"/>
+
+                            </LinearLayout>
+
+
+                            <Space
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"/>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/orangeHeader"
+                                    android:textSize="18sp"
+                                    android:text="paths"/>
+
+                                <ImageButton
+                                    android:id="@+id/next_guide_page"
+                                    android:layout_width="70dp"
+                                    android:layout_height="60dp"
+                                    android:rotation="180"
+                                    android:background="@drawable/ic_baseline_reply_24"
+                                    android:backgroundTint="@color/orangeHeader" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"/>
+
+                    </LinearLayout>
+
+
+
+
+                    <!--Seconda pagina della guida-->
+
+                    <LinearLayout
+                        android:id="@+id/guide_paths"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/translucentWhite"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"/>
+
+                        <TextView
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="22sp"
+                            android:fontFamily="casual"
+                            android:gravity="center"
+                            android:text="Paths"
+                            android:textFontWeight="600"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="@string/guide_paths"
+                            android:textColor="@color/black"/>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center">
+
+                                <ImageButton
+                                    android:id="@+id/prev_guide_page_paths"
+                                    android:layout_width="70dp"
+                                    android:layout_height="60dp"
+                                    android:backgroundTint="@color/orangeHeader"
+                                    android:background="@drawable/ic_baseline_reply_24"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/orangeHeader"
+                                    android:textSize="18sp"
+                                    android:text="back"/>
+
+                            </LinearLayout>
+
+
+                            <Space
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"/>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/orangeHeader"
+                                    android:textSize="18sp"
+                                    android:text="gallery"/>
+
+                                <ImageButton
+                                    android:id="@+id/next_guide_page_paths"
+                                    android:layout_width="70dp"
+                                    android:layout_height="60dp"
+                                    android:rotation="180"
+                                    android:background="@drawable/ic_baseline_reply_24"
+                                    android:backgroundTint="@color/orangeHeader" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"/>
+
+                    </LinearLayout>
+
+
+
+
+                    <!--Terza pagina della guida-->
+
+                    <LinearLayout
+                        android:id="@+id/guide_gallery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/translucentWhite"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"/>
+
+                        <TextView
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="22sp"
+                            android:fontFamily="casual"
+                            android:gravity="center"
+                            android:text="Gallery"
+                            android:textFontWeight="600"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="@string/guide_gallery"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="@string/guide_gallery_part2"
+                            android:textColor="@color/black"/>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center">
+
+                                <ImageButton
+                                    android:id="@+id/prev_guide_page_gallery"
+                                    android:layout_width="70dp"
+                                    android:layout_height="60dp"
+                                    android:backgroundTint="@color/orangeHeader"
+                                    android:background="@drawable/ic_baseline_reply_24"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/orangeHeader"
+                                    android:textSize="18sp"
+                                    android:text="paths"/>
+
+                            </LinearLayout>
+
+
+                            <Space
+                                android:layout_width="80dp"
+                                android:layout_height="match_parent"/>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/orangeHeader"
+                                    android:textSize="18sp"
+                                    android:text="community"/>
+
+                                <ImageButton
+                                    android:id="@+id/next_guide_page_gallery"
+                                    android:layout_width="70dp"
+                                    android:layout_height="60dp"
+                                    android:rotation="180"
+                                    android:background="@drawable/ic_baseline_reply_24"
+                                    android:backgroundTint="@color/orangeHeader" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"/>
+
+                    </LinearLayout>
+
+
+
+
+                    <!--Quarta pagina della guida-->
+
+                    <LinearLayout
+                        android:id="@+id/guide_community"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/translucentWhite"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"/>
+
+                        <TextView
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="22sp"
+                            android:fontFamily="casual"
+                            android:gravity="center"
+                            android:text="Community"
+                            android:textFontWeight="600"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="@string/guide_community"
+                            android:textColor="@color/black"/>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center">
+
+                                <ImageButton
+                                    android:id="@+id/prev_guide_page_community"
+                                    android:layout_width="70dp"
+                                    android:layout_height="60dp"
+                                    android:backgroundTint="@color/orangeHeader"
+                                    android:background="@drawable/ic_baseline_reply_24"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/orangeHeader"
+                                    android:textSize="18sp"
+                                    android:text="gallery"/>
+
+                            </LinearLayout>
+
+
+                            <Space
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"/>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/orangeHeader"
+                                    android:textSize="18sp"
+                                    android:text="sketch"/>
+
+                                <ImageButton
+                                    android:id="@+id/next_guide_page_community"
+                                    android:layout_width="70dp"
+                                    android:layout_height="60dp"
+                                    android:rotation="180"
+                                    android:background="@drawable/ic_baseline_reply_24"
+                                    android:backgroundTint="@color/orangeHeader" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"/>
+
+                    </LinearLayout>
+
+
+
+                <!--Quinta pagina della guida-->
+
+                    <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/guide_sketch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/translucentWhite"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical">
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"/>
+
+                        <TextView
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="22sp"
+                            android:fontFamily="casual"
+                            android:gravity="center"
+                            android:text="Sketch"
+                            android:textFontWeight="600"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="@string/guide_sketch"
+                            android:textColor="@color/black"/>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center">
+
+                                <ImageButton
+                                    android:id="@+id/prev_guide_page_sketch"
+                                    android:layout_width="70dp"
+                                    android:layout_height="60dp"
+                                    android:backgroundTint="@color/orangeHeader"
+                                    android:background="@drawable/ic_baseline_reply_24"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/orangeHeader"
+                                    android:textSize="18sp"
+                                    android:text="community"/>
+
+                            </LinearLayout>
+
+
+                            <Space
+                                android:layout_width="60dp"
+                                android:layout_height="match_parent"/>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/orangeHeader"
+                                    android:textSize="18sp"
+                                    android:text="rewards"/>
+
+                                <ImageButton
+                                    android:id="@+id/next_guide_page_sketch"
+                                    android:layout_width="70dp"
+                                    android:layout_height="60dp"
+                                    android:rotation="180"
+                                    android:background="@drawable/ic_baseline_reply_24"
+                                    android:backgroundTint="@color/orangeHeader" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"/>
+
+                    </LinearLayout>
+
+
+
+                    <!--Sesta pagina della guida-->
+
+                    <LinearLayout
+                        android:id="@+id/guide_rewards"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/translucentWhite"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical">
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"/>
+
+                        <TextView
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="22sp"
+                            android:fontFamily="casual"
+                            android:gravity="center"
+                            android:text="Rewards"
+                            android:textFontWeight="600"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="@string/guide_rewards"
+                            android:textColor="@color/black"/>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center">
+
+                                <ImageButton
+                                    android:id="@+id/prev_guide_page_rewards"
+                                    android:layout_width="70dp"
+                                    android:layout_height="60dp"
+                                    android:backgroundTint="@color/orangeHeader"
+                                    android:background="@drawable/ic_baseline_reply_24"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/orangeHeader"
+                                    android:textSize="18sp"
+                                    android:text="sketch"/>
+
+                            </LinearLayout>
+
+
+                            <Space
+                                android:layout_width="70dp"
+                                android:layout_height="match_parent"/>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/orangeHeader"
+                                    android:textSize="18sp"
+                                    android:text="menu"/>
+
+                                <ImageButton
+                                    android:id="@+id/return_to_main_menu"
+                                    android:layout_width="70dp"
+                                    android:layout_height="60dp"
+                                    android:rotation="180"
+                                    android:background="@drawable/ic_baseline_reply_24"
+                                    android:backgroundTint="@color/orangeHeader" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"/>
+
+                    </LinearLayout>
+
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"/>
+
+                </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/rounded_bottom_nav_view"
+        app:itemIconTint="@drawable/bottom_nav_view_item_color"
+        app:itemTextColor="@color/white"
+        app:itemIconSize="27dp"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_navigation_bar"
+        tools:layout_editor_absoluteX="0dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

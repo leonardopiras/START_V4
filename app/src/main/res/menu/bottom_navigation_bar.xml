@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="Settings"/>
+
+    <item
+        android:id="@+id/community"
+        android:icon="@drawable/community_icon"
+        android:title="Community"/>
+
+    <item
+        android:id="@+id/training"
+        android:icon="@drawable/start_training_icon"
+        android:title="Training"/>
+
+    <item
+        android:id="@+id/gallery"
+        android:icon="@drawable/gallery_icon"
+        android:title="Gallery"/>
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="Profile"/>
+</menu>
